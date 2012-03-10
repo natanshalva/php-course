@@ -38,10 +38,27 @@ if (!$db) {
     if (!$result) {
       die(' database query failed: ' . mysql_error());
     }
-     
-    // see what $result is with var_dump
-    //  var_dump($result);
+
+// insert data in to the db
+//    mysql_query(
+//            "INSERT INTO first ( name, content )VALUES( 'nevet' , 'tal-shalva')"
+//            , $connection);
     
+ 
+// Update data     
+//    $name = "tttt";   
+//     mysql_query(
+//            "UPDATE first SET name='$name' WHERE id='1'"
+//            , $connection);
+
+// dalete data    
+   
+     mysql_query(
+            "DELETE FROM first
+              WHERE id > '5'"
+            , $connection);  
+     
+    // var_dump($result);
     // 4 get the resourse and put it in to array
 
     while ($row = mysql_fetch_array($result)) {
