@@ -1,4 +1,33 @@
 body {
 /* background: red;*/
+margin: 0;
+padding: 0;
+}
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+header {
+  height: 130px; 
+  background: #9999ff;
+  border-bottom: 2px soild; 
+  padding: 15px;
+  
+}
+aside {
+  width: 200px;
+  background: #660000;
+  color: #fff; 
+  font-size: 22px; 
+  min-height: 400px;
+  padding: 15px;
+  float: left;
 }
 
+article {
+  background: #ffcc66;
+  overflow: hidden;
+} 
+.cen {
+  float: left;
+}
