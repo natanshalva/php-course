@@ -17,4 +17,7 @@ while ( $row = mysql_fetch_array($result_set , MYSQL_ASSOC )){
     echo $key . " - " . $value . "<br>";
   }
 }
+echo "-------<br>";
+echo $db->last_query;
+
 ?>

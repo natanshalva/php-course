@@ -7,7 +7,9 @@ class db {
   public $db = "oop";
   
   private $connection;
-  
+  public $last_query;
+
+
   function __construct() {
     $this->open_connection_db();
   }
@@ -32,6 +34,8 @@ class db {
     }
   }
   public function query($sql){
+    // we set the $sql to the atterbute $last_query 
+    $this->last_query = $sql;
     // 3 database query 
     $result = mysql_query($sql, $this->connection);
     if (!$result) {
