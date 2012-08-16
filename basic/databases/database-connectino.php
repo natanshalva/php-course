@@ -9,6 +9,8 @@ $connection = mysql_connect($server, $username, $password);
 if (!$connection) {
   die('cant connecto to the database' . mysql_error());
 }
+// Hebrew need this:  
+mysql_query("SET NAMES 'utf8'");
 // 2 Select the database to use
 $db = mysql_select_db($database_name, $connection);
 if (!$db) {
